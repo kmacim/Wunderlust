@@ -96,9 +96,11 @@ h1, h2, h3{
 	font-family: "Molle";
 }
 h1{
-    padding: 20px;
+    padding: 1.25rem;
 	font-size:4.662rem;
 }
+
+
 
 h2{
 font-size:3.75rem;
@@ -109,7 +111,7 @@ h3{
 }
 h4{
 	font-size: 2.5rem;
-	margin-top: 10px;
+	margin-top: .625rem;
 }
 
 p, q{
@@ -144,32 +146,20 @@ background-image: linear-gradient(to bottom,  #499BD2  ,  #FFFFFF);
 }
 
 
-/* header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #fff;
-  position: relative;
-  border-bottom: 2px solid #eee;
-} */
+
 
 /* Logo and title */
 #logo img {
   height: 50px;
 }
 
-/* header h1 {
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  color: #0078D4;
-} */
+
 
 header p {
   flex-grow: 1;
   margin-left: 1rem;
-  font-size: 1rem;
-  color: #555;
+  font-size: 2rem;
+  color:var(--black);
 }
 
 /* Menu container */
@@ -214,7 +204,6 @@ label[for="toggle"]:hover{
   right: 0;
   background-color: #55BCD5;
   border: none;
-  /* border-radius: 0.5rem; */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: none;
   flex-direction: column;
@@ -226,7 +215,7 @@ label[for="toggle"]:hover{
   display: flex;
 }
 
-/* Menu items */
+/* Menu design */
 #menu-toggle ul li {
   border-bottom: 1px solid black;
 }
@@ -236,30 +225,35 @@ label[for="toggle"]:hover{
 #menu-toggle ul li a {
   display: block;
   padding: 0.75rem 1rem;
-  color: #333;
+  color: var(--black);
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 #menu-toggle ul li a:hover {
-  background-color: #f0f0f0;
+  background-color:var(--white);
 }
 
 /* Active link */
 #menu-toggle ul li.active a {
   font-weight: bold;
-  color: #0078D4;
+  color: var(--black);
 }
 
 
 
 
-
+/* start design for main */
 
 #intro{
 display: grid;
 grid-template-columns: 1fr;	
 margin-left: 1rem;
+}
+
+#intro >  p {
+
+	padding: .750rem;
 }
 
 picture > img {
@@ -269,10 +263,10 @@ picture > img {
     padding: 1.25rem;
 	display:grid;
 	grid-template-columns: 1fr;
-	background-color:#F6D64A;
+	background-color:var(--yellow);
 }
 
-
+/*  grid and placment */
 #testimonials{
 
 
@@ -286,7 +280,7 @@ display: grid;
 grid-template-columns: 1fr;	
 justify-items: center;
  }
-
+/* This just worked out i was frustrated or sleepy  */
 .blu1, .blu2, .blu3, .blu4 {
 	
 	margin: .375rem;
@@ -298,6 +292,7 @@ justify-items: center;
 	border-radius: 10px;
 }  
 
+/* ALign picture */
 #pic{
 	
 	display: grid;
@@ -313,14 +308,14 @@ padding:2.5rem;
 }
 #about {
 
-	background-color: #499BD2;
+	background-color:var(--blue) ;
 	text-align: center;
 }
 #about  div {
 
 	display:grid;
 	grid-template-columns:  1fr 1fr;
-	background-color: #499BD2;
+	background-color: var(--blue);
 	padding: 0.625rem;
 
 }
@@ -511,7 +506,7 @@ label[for="travelTime"]{
 
 input:focus, select:focus{
 
-	border: 2px inset var(--blue);
+	/* border: 2px inset var(--blue); */
 	box-shadow: 0 0 0 0.09em currentColor;
 }
 
