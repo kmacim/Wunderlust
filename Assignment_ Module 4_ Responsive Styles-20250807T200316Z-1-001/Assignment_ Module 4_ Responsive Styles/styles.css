@@ -135,7 +135,7 @@ overflow:hidden;
 /* designing the header */
 header{
  
-display: flexbox;
+display: flex;
 flex-flow: row wrap;
 padding: 1.25rem;
 height: 5%;
@@ -288,7 +288,7 @@ justify-items: center;
 	height: 22rem;
 	width: 22rem;
 	background: var(--blue);
-	border: 3px solid white;
+	border: 3px solid var(--white);
 	border-radius: 10px;
 }  
 
@@ -303,9 +303,12 @@ justify-content: center;
 
 }
 q{
+
 padding:2.5rem;
-	text-align: center;
+text-align: center;
+
 }
+
 #about {
 
 	background-color:var(--blue) ;
@@ -319,6 +322,7 @@ padding:2.5rem;
 	padding: 0.625rem;
 
 }
+/* designing form */
 #contact {
 	display:grid;
 	grid-template-columns: 1fr;
@@ -346,7 +350,7 @@ font-family: "Montserrat";
 border-style:  solid;
 padding:.825rem;
 border-width:.3em;
-border-color: #9B26B0;
+border-color:var(--purple);
 
 }
 
@@ -400,6 +404,7 @@ display: none;
 	top: 2em;
 	padding:1em;
 }
+/* designing radio button */
 
 input[type="radio"]:checked + .radio-control::after {
  
@@ -409,9 +414,8 @@ input[type="radio"]:checked + .radio-control::after {
   left: 0.25rem;
   width: 0.75rem;
   height: 0.75rem;
-  background-color: #9B26B0; /* Accent color */
+  background-color: #9B26B0; 
   border-radius: 50%;
-
 }
 
 .required{
@@ -427,14 +431,14 @@ label[for="email"]{
 
 input[type="email"]{
 
-display: grid;
+    display: grid;
 	grid-template-rows: 1fr;
 	width: 25rem;
 	height: 2rem;
 	border-style:  solid;
-padding:.825rem;
-border-width:.3em;
-border-color: #9B26B0;
+   padding:.825rem;
+   border-width:.3em;
+   border-color: #9B26B0;
 
 }
 
