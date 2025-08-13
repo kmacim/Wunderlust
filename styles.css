@@ -196,16 +196,17 @@ label[for="toggle"]:hover{
 
 /* Menu list styling */
 #menu-toggle ul {
+	display: none;
   list-style: none;
   margin: 0;
   padding: 0;
   position: absolute;
   top: 3rem;
   right: 0;
-  background-color: #55BCD5;
+  background-color: var(--teal); 
   border: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: none;
+ 
+  
   flex-direction: column;
   width: 300px;
 }
@@ -256,7 +257,7 @@ margin-left: 1rem;
 	padding: .750rem;
 }
 
-picture > img {
+picture  {
 	width: 29rem;
 }
 #plan{
@@ -280,6 +281,7 @@ display: grid;
 grid-template-columns: 1fr;	
 justify-items: center;
  }
+
 /* This just worked out i was frustrated or sleepy  */
 .blu1, .blu2, .blu3, .blu4 {
 	
@@ -554,3 +556,186 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+
+	html{
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+
+
+/* Medium screen devices (768px and above) */
+@media screen and (min-width: 768px) {
+	#intro{
+		display: flex;
+		justify-content: center;
+	}
+/* Base styles */
+
+
+ #menu-toggle ul  {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2em; 
+  justify-content: center; 
+  align-items: center;
+  right: 170px;
+  bottom: 100px;
+  padding-top: 30px;
+  background-color: transparent;
+}
+
+
+/* Hide toggle on larger screens */
+#menu-toggle  label, #toggle {
+  display: none;
+}
+
+.sr-only{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+#intro{
+
+	display: grid;
+	grid-template-columns: 1fr ;
+
+}
+#img-grid{
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: .625rem;
+
+}
+
+#plan div {
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#testimonials div{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#about div{
+display: grid;
+	grid-template-columns: 1fr 1fr ;
+}	
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    flex-wrap: wrap;
+	
+  }
+}
+
+@media screen and (min-width: 889px){
+  #menu-toggle ul  {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: transparent;
+}
+header  p{
+
+	margin-top: 200px;
+	left: 500px;
+}
+
+/* Hide toggle on larger screens */
+#menu-toggle  label, #toggle {
+  display: none;
+}
+
+.sr-only{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
+  #intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: start;
+    padding: 2em;
+  }
+
+  #intro h2 {
+    font-size: 2em;
+    grid-column: 1 / -1;
+    margin-bottom: 0.5em;
+  }
+
+  #intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  #img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    grid-column: 2 / -1;
+  }
+
+  #img-grid img,  #img-grid picture {
+    width: 175%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  #plan div{
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #testimonials div{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#about div{
+display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}	
+#names input{
+  
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 2fr  1fr);
+}
+
+form{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:.625rem;
+} 
+
+}
+
+
